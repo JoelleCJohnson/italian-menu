@@ -36,7 +36,7 @@ export default function Home() {
             {(!menuItem) //no menu items?
                 ?
                 //if no menu items, show button. 
-                <button onClick={() => handleButtonClick()}>Get data</button>
+                <button onClick={() => handleButtonClick()}>Menu</button>
                 :
                 //Otherwise, show menu items.
                 menuItem.map((singleItem) => {
