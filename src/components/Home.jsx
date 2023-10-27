@@ -4,8 +4,8 @@ function SingleMenuComponent(props){
     console.log(props)
     return (
         <>
-        <h3>{props.title}</h3>
-        <p>{props.description}</p>
+            <h3>{props.title}</h3>
+            <p>{props.description}</p>
         </>
         
     )
@@ -40,8 +40,7 @@ export default function Home(){
             <button onClick={() => handleButtonClick()}>Get data</button>
             {menuItem && 
                 menuItem.map((singleItem) => {
-            console.log('singleItem---->', singleItem)
-        })}
+                    console.log('singleItem---->', singleItem)
             
                 return (
                     <>
@@ -50,6 +49,7 @@ export default function Home(){
                         <p>{singleItem.description}</p> */}
                     </>
                 )
+            })}
             
         </>
     )
