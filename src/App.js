@@ -1,12 +1,14 @@
 import './App.css';
+import Hero from './components/Hero';
 import Home from './components/Home';
+
 
 function App() {
   return (
-    <>
-      <div>Welcome to Codice d' Boca</div>
+    <main className='container'>
+      <Hero />
       <Home />
-    </>
+    </main>
   );
 }
 
